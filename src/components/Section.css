@@ -1,0 +1,91 @@
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    gap: 20px;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 6%;
+}
+.section__title{
+    width: 100%;
+    font-size: 15px;
+}
+.section__title h1{
+    font-size: 3rem;
+    color: white;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.section__title p{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.section__title span{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.forum{
+   display: flex;
+   gap: 20px; 
+}
+.forum input{
+    caret-color: rgb(255, 255, 255);
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    padding-top: 1rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    border-radius: 10px;
+
+}
+.forum input::placeholder{
+    font-size: 17px;
+    color: white;
+}
+.forum input:focus {
+  outline: none;
+    box-shadow: 0 0 5px rgba(35, 14, 14, 0.5);
+  background-color: #091e09;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.forum button{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 20px;
+}
+.message{
+    font-size: 20px;
+    font-weight: 800;
+}
+@media (max-width: 600px) {
+    .section__title h1{
+        font-size: 1.7rem;
+        padding:  0 30px;
+    }
+    .forum{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .section__title p{
+        font-size: 0.9rem;
+        padding: 0 30px;
+    }
+    .forum input{
+        width: 100%;
+    }
+    .forum button{
+        width: 100%;
+    }
+}
