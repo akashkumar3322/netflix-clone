@@ -5,11 +5,12 @@ const Section = () => {
     let btn=()=>{
         let emailinput=document.querySelector('input');
         const messagebox=document.querySelector('.message')
-        if(emailinput.value == ""|| emailinput.value.trim() || emailinput.length<5){
+        if(emailinput.value == ""||emailinput.value.length<20){
             messagebox.innerHTML = "Please enter your email address!";
             messagebox.style.color = "red";
             messagebox.style.fontSize = "15px";
             messagebox.style.marginTop = "10px";
+            emailinput.value="";
         }else{
             messagebox.innerHTML = "Thank you for subscribing!";
             messagebox.style.color = "white";
